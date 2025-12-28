@@ -1,0 +1,59 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus | Next-Gen Cinematic Player</title>
+    <meta name="description" content="Hardware-accelerated cinematic web player experience.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Background Video Layer -->
+    <video id="background-video" class="cinematic-bg-video" src="assets/media/tribute_video.mp4" poster="assets/images/bg-poster.jpg" autoplay="" muted="" loop="" playsinline="">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Cinematic Overlay (Vignette & Texture) -->
+    <div class="bg-overlay"></div>
+    <div class="noise-overlay"></div>
+    
+    
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <span class="logo-dot"></span>
+                    <h1>NEXUS</h1>
+                </div>
+                <div class="nav-actions">
+                    <a href="#player" class="nav-link">Experience</a>
+                    <button class="glow-button">Connect</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <span class="badge fade-in-up">Now Streaming in 4K</span>
+                <h1 class="fade-in-up delay-1">CINEMATIC <span class="text-gradient">MOTION</span></h1>
+                <p class="fade-in-up delay-2">Experience the next generation of web playback with hardware-accelerated precision and immersive glassmorphism controls.</p>
+            </div>
+        </section>
+
+        <section id="player" class="video-section fade-in-up delay-3">
+            <div class="container">
+                <div class="video-player-container" id="player-shell">
+                    <!-- Main Local Video Player -->
+                    <video id="main-video" src="assets/media/wmremove-transformed.mp4" controls="" autoplay="" loop="" muted="" playsinline="" class="featured-video">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script type="module" src="script.js"></script>
+
+<script src="js/BackgroundManager.js"></script><script src="js/NexusPlayer.js"></script><script src="js/MainPlayer.js"></script></body></html>
